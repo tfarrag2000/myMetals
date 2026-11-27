@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help — myMetals</title>
+  <meta name="description" content="Answers to common questions about the myMetals app.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0B0E14;
+      --card: #141922;
+      --border: rgba(229, 192, 123, 0.18);
+      --gold-primary: #E5C07B;
+      --text: #F2F2F2;
+      --text-secondary: #A9B0BC;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Almarai', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text);
+      line-height: 1.85;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+    a { color: var(--gold-primary); }
+    h1 { color: var(--gold-primary); font-size: 1.7rem; margin: 0 0 4px; }
+    h2 { font-size: 1.15rem; color: var(--gold-primary); margin: 32px 0 8px; }
+    .meta { color: var(--text-secondary); font-size: 0.9rem; margin: 0 0 24px; }
+    .lead {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+    }
+    ul { padding-inline-start: 22px; margin: 8px 0; }
+    li { margin: 6px 0; }
+    code {
+      font-family: ui-monospace, Consolas, monospace;
+      font-size: 0.88em;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 1px 6px;
+      border-radius: 6px;
+      direction: ltr;
+      unicode-bidi: embed;
+    }
+    hr { border: none; border-top: 1px solid var(--border); margin: 48px 0 24px; }
+    .en { direction: ltr; text-align: left; }
+    .back { display: inline-block; margin-bottom: 24px; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← Home</a> · <a class="back" href="../help.html">العربية</a>
+  <h1>myMetals Help</h1>
+  <p class="meta">Short answers to the most common questions</p>
+
+  <h2>Getting started</h2>
+  <ul>
+    <li><strong>Setting up the vault:</strong> on first launch you choose your name and currency, then a 4-digit vault PIN that only you know, with your fingerprint or face as a faster way in.</li>
+    <li><strong>Demo data:</strong> you can try the app with sample data, then wipe it in Settings and start with your own.</li>
+    <li><strong>Language:</strong> Settings → Language: العربية or English.</li>
+  </ul>
+
+  <h2>Prices</h2>
+  <ul>
+    <li>Prices are the global spot price per ounce, converted to your currency at the daily exchange rate. The price time and source are always shown.</li>
+    <li><strong>Local market premium:</strong> if jewelers near you charge more or less than the global price, set the percentage on the Prices screen; it applies to every value and to zakat.</li>
+    <li><strong>Shop buy-back deduction:</strong> ask your jeweler what percentage they deduct when buying gold back, and enter it to see the expected buy-back value.</li>
+    <li><strong>Currency rates:</strong> the Prices screen lists your enabled currencies against the display currency. Tap "Today" and pick a past date to see that day's rates and the change since. Before March 2024 only major currencies are available. When you add a holding bought in another currency on an older date, its rate on the purchase day is shown.</li>
+    <li>If prices cannot be fetched, or are more than 24 hours old, the app hides values and pauses zakat and alerts instead of showing old numbers.</li>
+  </ul>
+
+  <h2>Holdings and sales</h2>
+  <ul>
+    <li>Add a bar, coin or jewelry with its karat, weight and the amount you paid, and the app works out the price per gram. Or tap “Enter price per gram instead”. Name, workmanship, seller, invoice and date are optional under “More details”. Only the metals turned on in Settings are shown. Weights accept milligrams (for example 7.988).</li>
+    <li>Bars and coins: for several pieces of one weight, set the “Count” and one piece's weight. They sell by whole pieces, not by weight. Jewelry sells by weight.</li>
+    <li>A holding's sales show on its card with weight, price and profit. The “Cancel” button next to a sale cancels it and returns its weight. Deleting a holding deletes its sales too.</li>
+    <li>When selling, enter a partial weight or tap “All (100%)”. Type the “Total received” from the receipt and the app works out the price per gram, or tap “Enter price per gram instead”. Cost and realized profit are calculated for the sold part only.</li>
+    <li>Arabic digits (١٥٫٥) and a comma (15,5) are accepted in every number field.</li>
+    <li><strong>Invoice:</strong> attach it with the camera, from the gallery or as a PDF file (up to 5 MB). It is saved encrypted on your phone and included in backups when “Include invoice attachments” is on.</li>
+    <li><strong>Export (Excel or PDF):</strong> the export button ↗ at the top of Holdings. The Excel file saves a formatted workbook with a summary, holdings, sales and cash, with totals that update if you edit the numbers.</li>
+  </ul>
+
+  <h2>Zakat</h2>
+  <ul>
+    <li>The gold nisab is 85 g of 24K, the silver nisab 595 g, and the rate 2.5%.</li>
+    <li>You can add cash to the nisab, exclude personal jewelry, and calculate zakat for each family member separately.</li>
+    <li>Set your hawl due date and turn on the reminder to get a notification a week before. “Record Zakat Payment for this Year” saves the payment and sets the next date 354 days later.</li>
+    <li>The result is a guide; ask a scholar about special cases.</li>
+  </ul>
+
+  <h2>Gold price alert</h2>
+  <ul>
+    <li>On the Prices screen: turn on the alert, choose the karat (24, 21 or 18), gram or ounce and the currency, then enter a lower or upper price and tap “Save Alert”.</li>
+    <li>When you change the karat, unit or currency, the limits you typed are converted at today's price.</li>
+    <li>The app checks the price about every 15 minutes while closed and notifies you once when the limit is crossed.</li>
+    <li><strong>No notification?</strong> Make sure notifications for myMetals are on in the phone settings, and turn off battery optimization for the app, especially on Xiaomi, Oppo and Huawei phones.</li>
+  </ul>
+
+  <h2>Fingerprint and PIN</h2>
+  <ul>
+    <li>The vault opens with its own PIN or your fingerprint. The phone's own passcode does not open the vault, so someone who knows your phone passcode does not see your savings.</li>
+    <li>After 5 unrecognized fingerprints the phone blocks the sensor for about 30 seconds; type your vault PIN.</li>
+    <li>After 5 wrong PIN attempts, entry is locked for a while, and the wait grows with each lockout.</li>
+    <li><strong>Forgot the PIN?</strong> On the lock screen choose “Forgot PIN?” and prove you own the vault with the vault password, the recovery key or your fingerprint, then pick a new PIN. Your data stays as it is. Without a backup or a fingerprint only wiping is left, so make a backup.</li>
+  </ul>
+
+  <h2>Backup and recovery key</h2>
+  <ul>
+    <li>Backups are encrypted on your phone with the vault password you choose, then uploaded to your own Google Drive. Nobody else can open them. The same password opens the vault in the browser.</li>
+    <li><strong>Automatic backup</strong> uploads a copy after every change (add, sell, delete, edit). Nothing is uploaded when the vault is empty or unchanged. Each device keeps a current copy plus one per day for the last 7 days, under "Older copies".</li>
+    <li><strong>More than one device:</strong> what another device (such as the web app) saved is merged in on its own before anything is uploaded, so what was added on every device stays. When another device's copy does not open (for example, a different password), the home screen shows "A newer backup" with Merge or Keep this device, and this device does not write over it until you choose.</li>
+    <li>The <strong>recovery key</strong> opens your backups if you forget the vault password. Keep it outside the phone: print the PDF or write it on paper.</li>
+    <li><strong>New phone:</strong> install myMetals, tap "I have previous data", choose the Google Drive backup and open it with the password or the recovery key. Without Google: on the old phone save an "Offline Backup File", send it to the new phone and choose "A backup file".</li>
+    <li>If both the password and the recovery key are lost, nobody, including us, can open the backup.</li>
+  </ul>
+
+  <h2>Family savings</h2>
+  <ul>
+    <li>Each item has an owner: you, your spouse, your children or shared, and zakat is calculated per person.</li>
+    <li>You can exchange your partner's share as a code encrypted with a family code you choose once and your partner types once, with no server involved. After that, packages need no typing.</li>
+  </ul>
+
+  <h2>Updates</h2>
+  <ul>
+    <li><strong>From Google Play:</strong> the store updates the app automatically.</li>
+    <li><strong>From this website:</strong> the app shows a “new version available” bar, and you can check any time in Settings → “Check for updates”. The update installs over the current version and keeps your data.</li>
+  </ul>
+
+  <h2>Your privacy</h2>
+  <ul>
+    <li>Settings → “Your privacy” shows where your data is now, the app lock, the last backup and what leaves the device.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>In the app: Settings → “Report a problem” opens an email with the app version filled in, and you decide whether to send it. Or write to us: <a href="mailto:tfarrag2000@hotmail.com">tfarrag2000@hotmail.com</a> · <a href="./privacy.html">Privacy policy</a></p>
+</main>
+</body>
+</html>

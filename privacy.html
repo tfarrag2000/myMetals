@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سياسة الخصوصية — معادني (myMetals)</title>
+  <meta name="description" content="سياسة الخصوصية لتطبيق معادني: بياناتك على جهازك، ولا يوجد لدينا خادم يستقبلها.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0B0E14;
+      --card: #141922;
+      --border: rgba(229, 192, 123, 0.18);
+      --gold-primary: #E5C07B;
+      --text: #F2F2F2;
+      --text-secondary: #A9B0BC;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Almarai', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text);
+      line-height: 1.85;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+    a { color: var(--gold-primary); }
+    h1 { color: var(--gold-primary); font-size: 1.7rem; margin: 0 0 4px; }
+    h2 { font-size: 1.15rem; color: var(--gold-primary); margin: 32px 0 8px; }
+    .meta { color: var(--text-secondary); font-size: 0.9rem; margin: 0 0 24px; }
+    .lead {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+    }
+    ul { padding-inline-start: 22px; margin: 8px 0; }
+    li { margin: 6px 0; }
+    code {
+      font-family: ui-monospace, Consolas, monospace;
+      font-size: 0.88em;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 1px 6px;
+      border-radius: 6px;
+      direction: ltr;
+      unicode-bidi: embed;
+    }
+    hr { border: none; border-top: 1px solid var(--border); margin: 48px 0 24px; }
+    .en { direction: ltr; text-align: left; }
+    .back { display: inline-block; margin-bottom: 24px; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← الصفحة الرئيسية</a> · <a class="back" href="./en/privacy.html">English</a>
+  <h1>سياسة الخصوصية لتطبيق معادني</h1>
+  <p class="meta">آخر تحديث: 21 نوفمبر 2026 · تنطبق على تطبيق أندرويد ونسخة المتصفح</p>
+
+  <p class="lead">معادني يحفظ بياناتك على جهازك. لا يوجد لدينا أي خادم يستقبل بياناتك، ولا إعلانات، ولا أدوات تحليلات أو تتبع.</p>
+
+  <h2>1. البيانات التي تدخلها</h2>
+  <ul>
+    <li>اسمك، ومقتنياتك من الذهب والفضة والمعادن، والنقد، والمبيعات، وأسماء أفراد الأسرة، وإعدادات الزكاة.</li>
+    <li>تُحفظ على جهازك فقط. على أندرويد تُشفَّر بـ AES-256-GCM بمفتاح محفوظ في التخزين الآمن للهاتف (Android Keystore). نسخة المتصفح تحفظها في تخزين المتصفح، وحمايتها أقل من تطبيق أندرويد.</li>
+    <li><strong>رمز PIN:</strong> لا يُحفظ الرمز نفسه، بل قيمة مشتقة منه (PBKDF2-HMAC-SHA256 مع ملح عشوائي).</li>
+    <li><strong>البصمة:</strong> يتحقق منها نظام الهاتف، ولا يصل التطبيق إلى بيانات البصمة.</li>
+  </ul>
+
+  <h2>2. حساب Google والنسخ الاحتياطي (اختياري)</h2>
+  <ul>
+    <li>إذا ربطت Google Drive، يحصل التطبيق على اسمك وبريدك الإلكتروني وصلاحية الوصول إلى <strong>مجلد التطبيق المخفي فقط</strong> (<code>drive.appdata</code>). لا يرى أي ملف آخر في حسابك.</li>
+    <li>تُشفَّر النسخة على جهازك قبل الرفع بكلمة مرور تختارها (PBKDF2-HMAC-SHA256 ثم AES-256-GCM). Google لا تستطيع قراءة محتواها، ولا نحن.</li>
+    <li>كلمة مرور الخزينة (للنسخ التلقائي) ومفتاح الاسترداد يُحفظان على جهازك فقط، في التخزين الآمن، ويُحذفان عند مسح البيانات.</li>
+    <li>ملفات «مشاركة العائلة» وتقارير PDF وملفات Excel تُنشأ على جهازك، وتشاركها أنت بنفسك. يمكن حماية تقرير PDF بكلمة مرور.</li>
+    <li>يمكن أيضاً عرض «مشاركة العائلة» كرمز QR على شاشتك ليمسحه شريكك. الرمز يحمل نفس الحزمة المشفّرة، وينتقل من الشاشة إلى الكاميرا مباشرة دون أي خادم.</li>
+  </ul>
+
+  <h2>3. الاتصال بالإنترنت</h2>
+  <p>يتصل التطبيق بالإنترنت عبر HTTPS للأغراض التالية فقط، ولا يرسل في أي منها معلومة عنك أو عن مقتنياتك:</p>
+  <ul>
+    <li><strong>أسعار المعادن والعملات العامة:</strong> من <code>api.gold-api.com</code> و<code>open.er-api.com</code>، ومصادر احتياطية عند تعطلها: <code>api.exchangerate-api.com</code> و<code>cdn.jsdelivr.net</code>.</li>
+    <li><strong>أسعار الأيام السابقة</strong> (الحاسبة وتاريخ الشراء ودفعات الزكاة): جداول يومية من <code>cdn.jsdelivr.net</code> أو <code>currency-api.pages.dev</code>، وأسعار العملات قبل 2024 من <code>api.frankfurter.app</code>.</li>
+    <li><strong>معرفة وجود إصدار جديد:</strong> نسخة GitHub ونسخة المتصفح تقرآن ملف <code>latest.json</code> من هذا الموقع. أما النسخة المثبّتة من Google Play فتسأل Google Play نفسه، وGoogle Play هو الذي يحدّثها.</li>
+    <li><strong>النسخ الاحتياطي والاستعادة</strong> مع Google Drive، إذا فعّلته.</li>
+  </ul>
+  <p>مثل أي موقع على الإنترنت، هذه الخدمات تستقبل عنوان IP الخاص بجهازك عند الاتصال بها.</p>
+
+  <h2>4. الفحص في الخلفية والإشعارات (أندرويد)</h2>
+  <ul>
+    <li>إذا فعّلت <strong>تنبيه سعر الذهب</strong> أو <strong>تذكير الزكاة</strong>، يجلب التطبيق الأسعار العامة كل 15 دقيقة تقريباً وهو مغلق، ويعرض إشعاراً على جهازك عند الحاجة.</li>
+    <li>يتم كل ذلك على الجهاز. لا يرسل التطبيق أسعار تنبيهك أو موعد زكاتك إلى أي جهة.</li>
+    <li>يتوقف الفحص عند إيقاف التنبيه والتذكير.</li>
+  </ul>
+
+  <h2>5. المشاركة مع أطراف ثالثة</h2>
+  <p>لا نبيع بياناتك ولا نشاركها مع أي جهة. لا توجد إعلانات ولا SDK للتحليلات أو التتبع داخل التطبيق.</p>
+
+  <h2>6. أذونات أندرويد</h2>
+  <ul>
+    <li><strong>INTERNET:</strong> للأسعار والنسخ الاحتياطي ومعرفة الإصدارات الجديدة.</li>
+    <li><strong>USE_BIOMETRIC:</strong> لفتح الخزينة بالبصمة إذا فعّلتها.</li>
+    <li><strong>CAMERA:</strong> لمسح رمز QR الخاص بمشاركة العائلة ولتصوير الفاتورة. يُطلب فقط عند استخدام أحدهما، والصور تبقى على جهازك.</li>
+    <li><strong>POST_NOTIFICATIONS:</strong> لإشعارات تنبيه السعر وتذكير الزكاة. يُطلب فقط عند تفعيل أحدهما.</li>
+  </ul>
+
+  <h2>7. حذف البيانات</h2>
+  <ul>
+    <li><strong>من التطبيق:</strong> الإعدادات ← «مسح كل البيانات من هذا الجهاز»، ثم اكتب «مسح» للتأكيد.</li>
+    <li><strong>من أندرويد:</strong> الإعدادات ← التطبيقات ← معادني ← التخزين ← مسح البيانات، أو احذف التطبيق.</li>
+    <li><strong>نسخة المتصفح:</strong> امسح بيانات الموقع من إعدادات المتصفح.</li>
+    <li><strong>النسخة الاحتياطية في Drive:</strong> من Google Drive ← الإعدادات ← إدارة التطبيقات ← معادني ← حذف البيانات المخفية.</li>
+  </ul>
+  <p>لا يوجد لدينا أي نسخة من بياناتك لنحذفها، لأنها لا تصل إلينا أصلاً.</p>
+
+  <h2>8. الأطفال</h2>
+  <p>التطبيق موجّه للبالغين ولا يجمع بيانات من الأطفال.</p>
+
+  <h2>9. التغييرات والتواصل</h2>
+  <p>ننشر أي تغيير في هذه الصفحة مع تاريخ التحديث. لأي سؤال عن الخصوصية: <a href="mailto:tfarrag2000@hotmail.com">tfarrag2000@hotmail.com</a></p>
+
+</main>
+</body>
+</html>

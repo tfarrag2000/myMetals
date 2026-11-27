@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — myMetals</title>
+  <meta name="description" content="myMetals privacy policy: your data stays on your device and no server receives it.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0B0E14;
+      --card: #141922;
+      --border: rgba(229, 192, 123, 0.18);
+      --gold-primary: #E5C07B;
+      --text: #F2F2F2;
+      --text-secondary: #A9B0BC;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Almarai', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text);
+      line-height: 1.85;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+    a { color: var(--gold-primary); }
+    h1 { color: var(--gold-primary); font-size: 1.7rem; margin: 0 0 4px; }
+    h2 { font-size: 1.15rem; color: var(--gold-primary); margin: 32px 0 8px; }
+    .meta { color: var(--text-secondary); font-size: 0.9rem; margin: 0 0 24px; }
+    .lead {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+    }
+    ul { padding-inline-start: 22px; margin: 8px 0; }
+    li { margin: 6px 0; }
+    code {
+      font-family: ui-monospace, Consolas, monospace;
+      font-size: 0.88em;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 1px 6px;
+      border-radius: 6px;
+      direction: ltr;
+      unicode-bidi: embed;
+    }
+    hr { border: none; border-top: 1px solid var(--border); margin: 48px 0 24px; }
+    .en { direction: ltr; text-align: left; }
+    .back { display: inline-block; margin-bottom: 24px; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← Home</a> · <a class="back" href="../privacy.html">العربية</a>
+  <h1>myMetals Privacy Policy</h1>
+  <p class="meta">Last updated: November 21, 2026 · Applies to the Android app and the web version</p>
+
+  <p class="lead">myMetals keeps your data on your device. We run no server that receives your data, and the app has no ads, analytics or tracking.</p>
+
+  <h2>1. Data you enter</h2>
+  <ul>
+    <li>Your name, your gold, silver and other metal holdings, cash, sales, family member names and zakat settings.</li>
+    <li>Stored on your device only. On Android they are encrypted with AES-256-GCM using a key kept in the phone's secure storage (Android Keystore). The web version keeps them in browser storage, which is less protected than the Android app.</li>
+    <li><strong>PIN:</strong> the PIN itself is never stored, only a value derived from it (PBKDF2-HMAC-SHA256 with a random salt).</li>
+    <li><strong>Fingerprint:</strong> checked by the phone's system; the app never receives fingerprint data.</li>
+  </ul>
+
+  <h2>2. Google account and backup (optional)</h2>
+  <ul>
+    <li>If you link Google Drive, the app gets your name, email address and access to <strong>its own hidden app folder only</strong> (<code>drive.appdata</code>). It cannot see any other file in your account.</li>
+    <li>Backups are encrypted on your device with a password you choose before upload (PBKDF2-HMAC-SHA256, then AES-256-GCM). Neither Google nor we can read them.</li>
+    <li>The vault password (for automatic backups) and the recovery key are kept on your device only, in secure storage, and are deleted when you wipe the app's data.</li>
+    <li>Family sharing files, PDF reports and Excel files are created on your device and shared by you. A PDF report can be protected with a password.</li>
+    <li>Family sharing can also be shown as a QR code on your screen for your partner to scan. The code holds the same encrypted package and goes from screen to camera directly, through no server.</li>
+  </ul>
+
+  <h2>3. Internet use</h2>
+  <p>The app connects over HTTPS only for the following, and none of these requests contain information about you or your holdings:</p>
+  <ul>
+    <li><strong>Public metal prices and exchange rates:</strong> from <code>api.gold-api.com</code> and <code>open.er-api.com</code>, with <code>api.exchangerate-api.com</code> and <code>cdn.jsdelivr.net</code> as fallbacks.</li>
+    <li><strong>Past prices</strong> (the calculator, purchase dates and zakat payments): daily tables from <code>cdn.jsdelivr.net</code> or <code>currency-api.pages.dev</code>, and exchange rates before 2024 from <code>api.frankfurter.app</code>.</li>
+    <li><strong>Checking for a new version:</strong> the GitHub and web versions read <code>latest.json</code> from this site. A copy installed from Google Play asks Google Play instead, and is updated by Google Play.</li>
+    <li><strong>Backup and restore</strong> with Google Drive, if you turn it on.</li>
+  </ul>
+  <p>As with any website, these services see your device's IP address when it connects to them.</p>
+
+  <h2>4. Background checks and notifications (Android)</h2>
+  <ul>
+    <li>If you turn on a <strong>gold price alert</strong> or the <strong>zakat reminder</strong>, the app fetches public prices about every 15 minutes while closed and shows a notification on your device when needed.</li>
+    <li>All of this happens on the device. Your alert thresholds and zakat date are never sent anywhere.</li>
+    <li>The check stops when you turn off the alert and the reminder.</li>
+  </ul>
+
+  <h2>5. Sharing with third parties</h2>
+  <p>We do not sell or share your data with anyone. The app contains no advertising, analytics or tracking SDK.</p>
+
+  <h2>6. Android permissions</h2>
+  <ul>
+    <li><strong>INTERNET:</strong> prices, backups and checking for new versions.</li>
+    <li><strong>USE_BIOMETRIC:</strong> unlocking the vault with your fingerprint, if you turn it on.</li>
+    <li><strong>CAMERA:</strong> scanning a family sharing QR code and photographing an invoice. Requested only when you use one of them; the pictures stay on your device.</li>
+    <li><strong>POST_NOTIFICATIONS:</strong> price alert and zakat reminder notifications. Requested only when you turn one of them on.</li>
+  </ul>
+
+  <h2>7. Deleting your data</h2>
+  <ul>
+    <li><strong>In the app:</strong> Settings → “Reset &amp; Wipe All Data on This Device”, then type DELETE to confirm.</li>
+    <li><strong>In Android:</strong> Settings → Apps → myMetals → Storage → Clear data, or uninstall the app.</li>
+    <li><strong>Web version:</strong> clear this site's data in your browser settings.</li>
+    <li><strong>Backups in Drive:</strong> Google Drive → Settings → Manage apps → myMetals → Delete hidden app data.</li>
+  </ul>
+  <p>We hold no copy of your data to delete, because it never reaches us.</p>
+
+  <h2>8. Children</h2>
+  <p>The app is intended for adults and does not knowingly collect data from children.</p>
+
+  <h2>9. Changes and contact</h2>
+  <p>Any change is published on this page with its date. For privacy questions: <a href="mailto:tfarrag2000@hotmail.com">tfarrag2000@hotmail.com</a></p>
+</main>
+</body>
+</html>

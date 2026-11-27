@@ -1,0 +1,17 @@
+{
+  "version": "0.23.2",
+  "build_number": 43,
+  "apk_url": "https://github.com/tfarrag2000/myMetals/releases/download/v0.23.2/myMetals-v0.23.2-arm64-v8a.apk",
+  "latest_apk_url": "https://github.com/tfarrag2000/myMetals/releases/download/v0.23.2/myMetals-v0.23.2-arm64-v8a.apk",
+  "apk_sha256": "55b10c93ea2ea9fe99c3195d6e5516e9752421fbe4919156ae88fffd0266e848",
+  "apk_urls": {
+    "arm64-v8a": "https://github.com/tfarrag2000/myMetals/releases/download/v0.23.2/myMetals-v0.23.2-arm64-v8a.apk"
+  },
+  "web_url": "https://tfarrag2000.github.io/myMetals/pwa/",
+  "release_url": "https://github.com/tfarrag2000/myMetals-src/releases/tag/v0.23.2",
+  "date": "2026-11-27",
+  "priority": "normal",
+  "min_supported_build": 0,
+  "notes_ar": "تقليص حجم حزمة التطبيق، ترقية أدوات بناء أندرويد (Gradle 9 / AGP 9 / Kotlin 2.3)، ومركزية ثوابت الاسم.",
+  "notes_en": "Smaller Play Store bundle via R8 shrinking, upgraded Android build toolchain (Gradle 9 / AGP 9 / Kotlin 2.3), and centralized brand constants."
+}
